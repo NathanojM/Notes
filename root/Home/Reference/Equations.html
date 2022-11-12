@@ -1,0 +1,285 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+	<title>Equations</title>
+	<meta name="generator" content="Zim 0.74.3">
+	<meta name="viewport" content="width=device-width">
+	<!-- <link href='http://fonts.googleapis.com/css?family=Open+Sans:300&subset=latin,greek,latin-ext' rel='stylesheet' type='text/css'> -->
+	<![if !IE]>
+	<!-- comment out for IE since it spams the user with warnings -->
+	<script type='text/javascript' src='http://code.jquery.com/jquery-1.7.1.js'></script>
+	<script type='text/javascript'>
+		$(window).load(function(){$("#navigation").height( $("#content").height()+65 );});
+	</script>
+	<![endif]>
+	<style>
+		body, html {
+			height:100%;
+			font-family:'Open Sans', sans-serif;
+			line-height:1.5em;
+			font-weight:300;
+			background-color:#FAFAFA;
+			text-rendering:geometricPrecision;
+			margin:0;
+			padding:0;
+		}
+		.wrapper {
+			height:100%;
+			position:relative;
+		}
+		#navigation {
+			background-color:#F3F3F3;
+			display:inline-block;
+			border-right:1px solid #EAEAEA;
+			padding-right:65px;
+			padding-top:65px;
+			padding-left:25px;
+			position:relative;
+			float:left;
+			min-height:100%;
+		}
+		#content {
+			float:left;
+			display:inline-block;
+			position:absolute;
+			max-width:960px;
+			padding:65px;
+		}
+		#navigation ul {
+			margin-top:0;
+			margin-bottom:0;
+			padding-left:40px;
+		}
+		#navigation li {
+			list-style-type:none;
+		}
+		#navigation a {
+			text-decoration:none;
+			color:gray;
+		}
+		#navigation strong {
+			color:#4E9A06;
+			font-weight:400;
+		}
+		#navigation a:hover {
+			text-decoration:underline;
+		}
+		#content h1:nth-child(1) {
+			margin-top:0;
+		}
+		h1,h2,h3,h4,h5,h6 {
+			color:#4E9A06;
+			font-weight:300;
+			margin-bottom: 0;
+		}
+		p {
+			margin-top: 0;
+		}
+		#content a {
+			color:#CE5C00;
+		}
+		#content a {
+			text-decoration: none;
+		}
+		#content a:hover {
+			text-decoration: underline;
+		}
+		#content a:active {
+			text-decoration: underline;
+		}
+		#content strike {
+			color: grey;
+		}
+		#content u {
+			text-decoration: none;
+			background-color: yellow;
+		}
+		#content tt {
+			color: #2e3436;
+		}
+		#content pre {
+			color: #2e3436;
+			margin-left: 20px;
+		}
+		.backlinks {
+			color:gray;
+		}
+		hr.footnotes {
+			width: 20%;
+			margin-left: 0;
+		}
+		@media print{
+			#navigation{
+				background-color:#FFF;
+			}
+		}
+
+		span.zim-tag {
+			color: #ce5c00;
+		}
+		div.zim-object {
+			border-style:solid;
+			border-width:1px;
+		}
+
+		.checked-box {list-style-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAANOgAADMQBiN+4gQAAAAd0SU1FB9gKGQ8sMEGsKGkAAAAZdEVYdENvbW1lbnQAQ3JlYXRlZCB3aXRoIEdJTVBXgQ4XAAAEBUlEQVRIx62V22tdRRTGf7Nn73P2ybntnNOe3NqkPTGgLTVUUZF6QatSLOKTPgqCIqLgQ0H/A1sQQbBYCBb1QfAxiC8tSO1FqHkwJVKtjdTGNraUmObsc9nXmfGh7cGYpM1D5nHWzPetteZb3wg2eB2YqYm4zSadsMtoboiNBH/3TE0awx6j+MRoxoTg/IYRvP19TQrJS0bzhdHGSyKFkLTtjSKwMjyiEz43ynhtP6bdjBCWyFobAf7eT7VhNF/q1FRbjYjmUohlCVPwnB+6FUxMTJipqSmUUhhjEGKd3bMT4ks/Y6oLBK2Yth8hHYtCJXOix7Nf7xLMzc0xOzvLzp078TyPNE3viW3QJPXzhNWbxFFKHCmMhoLn/FHodd48vGfhapdAacXQlkFK5dL6wIUm6fuTZPuvqDQhaMUYYyiVyuQr6rXDexYuAdi3tSv1ZJNs/R/CaszzT+1na88uXFnCEnJVgivBNN8uTJKmHQI/ptOOcXNZzMz9mOqFs90OHpipWcYwlo5P4ebnuOkrvr5wgrH+h3im7y36MzuwRXYZeKha/OhP0EkadFoxQSdGSotedR/+XwMc2XvKdNUFOFqZx6LKZWIiwjgkikNmLp/hm8sH+K1zjFTHXfBYdTi+eJArzXM0GxFxoBDCopLvo/fqEwi1XPkWkGqjFo2TgB1jOYZUKZTS/D1/ncmLh7jon0IbRWoiTi59ymzzJEEQE3cStNZsGxqlfPE57MBbOR8fP3hDGalOO9fq2DlBvmZw8xa2IxACGn6TydlD/O6f5OzSV/zif0cYhLQaEXGkKBbz7Ov/AOlXV1cxgBJRI3fuSTrpTawt18kWIZN1CFuaONI0w0WOXfsI43YIggh/KUSlhqxrMz74AkOZcWBm9QkH+Gw8NDLuITi+m0yzhluSyJzBLcpblUhFxywSRAEtPwQjsKVN30CNh0uvYuOubSHLtN3J0TO1j0pmBNuFbFWRK0gyPRZpktL2I5JQkclKakNlnh54g6ocvevUr/Ai2a7wineEkcJupA3S1Wg0nVZM2E6wbEF5U5G9Q++wI7sfR7h3N8HVNstykBfzH+KJEZwiWD0aIwxCgJ0R1Mu7GXOeJSuK93bZtQIle4D9pUNU5DC5jEsu55AvZakM5NicGyEj8uuz8bUCQgj67QfY671P3vEoeC69gy695U1U7NG7XV0pUwBjDJa1/JJlWWxzHuflzQe5FJ/GsgUVuZ2t8lEkTvfc0aNHb72flBhjVicQQqCUuvM3/M+WDVguWBrMVdDXEGZlBVEUrVCU9d9s5+fnaTQa2PZyPxEIhJaI1EEoZwX4ncynp6fXrmB4eJjR0VFarRbNZnP9P9rt9gohqNVq1Ov1ZbF/AZGev3hLJ2/zAAAAAElFTkSuQmCC)}
+		.xchecked-box {list-style-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAANOgAADMQBiN+4gQAAAAd0SU1FB9gKGQ8bDYnDxEwAAAAZdEVYdENvbW1lbnQAQ3JlYXRlZCB3aXRoIEdJTVBXgQ4XAAAEK0lEQVRIx9WVS2hTWRjHf/eR3CY1nbxMH2YiZRQS6qO13YlMVxY3SnVcuNIBFezGpSADLoQqLu1sHJCqdCFSXFpw4YOCSH3BtFqttTNamabX3DS5bfO6uffMoglja3RGcDMHzuac7/z/53++//cd+L8P6VuCPQYZ8ADNgBd4J31DcDcQs+GnHByRocEDv0kfBSjAOlYCs11Q+gpwDegS8LMJ+3QIK0ATzEhV8Odnz5bzw8P4dJ25aJQ/WlvJ1df/K7hSLtOcTNI+Pk69rpMTgqIQhCDvh1/VSpw79+gRrRMTmLZNezLJJsPg+a5dmOEwQlFqg1sWG16/Jv7sGWXDwBACFQjC9HcwIMONKkGp4PGAJGEDS0IQmZlhnWnye3c3eiyGo6qr3WHbrJ+dJf7gAXI6zSIr72T7/fgzmT4FHnTBsgrQBfYvTU0km5vxz86iADnAm0rRPTWFt7cXZccOJJcLAGHb2K9ekT93jmwmwwdAAFpjI6Ntbfxw5879ag7l6o1sr5eHHR3IsRgeQK/M4sQE+YEB7JcvEY6zAj45SWFgAPPxYwzHoQxIkQjTPT0kIxE+Noj8sexFn4/xnh58iQTeSpHkHAdrbIzi0BCOrmNPTpK/eJHM3bt8sCyKQCiR4NWePWSiUZw1+ZLXJm4pFKLhzBlCsRh2RUXacVgeGaF47RrL58+zcP8+RrmMkCQinZ1EL1zAjERqmkH+tLYl1G3bCJw4QUjT0IA0MJfLMX/5MqmHD0nZNiUgtGULG/r7ccXjINWuWbnmqsuFu7sb/4EDNLlcBIEioNs2KUAFGmMxmk6dQm1tRZI+3xBqEkiShBQOox05Ql1nJ26gvuIUAWiKQnj/ftStW5Fk+YuF+NldsbBA4cYN9KdPmaso8Fc62ZJtk7l1C2t0FGdxESHE1xE4hkHh6lX0oSHSpRIewC/LrPf7CSgKNpCamkI/fZr8pUuIZBIcpyaBunahPp1mub+fDyMjGKUSChCsq6Nh717q9u2jbnSU0uAgRrFIwTThyhUCqRS+hgZKLS1fJvDm87SNjZGcnsYUAjcQ8vsJ9/Xh7u1FDgRQN20iks3iDA+zZFmYhQLqzZtsj8WY3L0baY2Sf55ICCKpFHUzM2SEQAJCHg+hY8fQDh5EDgRWDoRC1J88SePRo2geD0XAcBy8b98Sv3ePYDZbbf2rFQjLIphMsmDbaEBQVQkePox26BCSz7e6i4bDrDt+nGYhmBscpFAskheC4Js3bPR4qHphFYEnlcI7P4/jdqNpGu8TCe4oCsXr1z//F2ga3+/cSfTJE0qmSVYIsKzaOZDcbjKyzFIiwfvt21kMBLA07YsetzWNd+3tLLW0sH5igvT8PH9Go/z44kX+E4LGjg7GDYOcy4XlOEgLC//5P/5LCFzxOPLmzWyIx+m6fduu7v0NVGqyTSycKksAAAAASUVORK5CYII=)}
+		.unchecked-box {list-style-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAANOgAADMQBiN+4gQAAAAd0SU1FB9gKGQ8qAt8h3m8AAAAZdEVYdENvbW1lbnQAQ3JlYXRlZCB3aXRoIEdJTVBXgQ4XAAAA60lEQVRIx+2VsQqDMBRF70sCLg5OLoKgjk7+lJ/hh+STXBwcnRz8ArMEkrxOFktbaC3tULzTg5e8k5vADXDq70VbobXmvu/hvQczg4heHrJfXxQFuq67blZbMc8zpmlCXddIkgTOuZcBUko45zCOI6y1Nz2xFSEEZFmGOI7fGg4A3nsQEZqmuXOu9jallACAtm3fvmutNaIoAjM/dkBECCF89KCbk4eAb+kEnIAT8EsAM0OIz3hSyrssUvss8t5fg+uIrLXPs0gIgWVZYIyBUurQyYdheO4gz3NUVQVjDNZ1PfSjpWmKsixvehfB9GBZ3NndrgAAAABJRU5ErkJggg==)}
+		.migrated-box {list-style-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABGdBTUEAALGPC/xhBQAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAANOgAADMQBiN+4gQAAAAd0SU1FB+AKHREFA8vJSnkAAAAZdEVYdENvbW1lbnQAQ3JlYXRlZCB3aXRoIEdJTVBXgQ4XAAAC1klEQVRIx+2VT0hUURTGf/e958w4Tc3TYowMw1GyEgwr1MqsFmbZIrIWQZsWJUjbdoHQpl3Qps0swnCRECQFYkR/TC1iKkqmfzAKTo2Vf8hoRsfR995tkRMT87RRWkUHHhy495zvnvvu933wP/75EKkkEAjIYDCIaZpIKRFCZN0kfX9xcTGtra2/irVUEolECIfDlJeXo+s6hmFkDaCqKoZhEAqFSCaTv60pqcSyLAoLC/F4PEtqDmCaJkIIKisrMybX0sdUVRWA5ubmPzdNjjI1cpXkZC/O1fV03PXgdDqRUtpPIITAsqxsDz0Z/3CZQv8uqo4N4C8/Tp2/DdM0MiZQlvk41OTkI/LW1SGtCVb5drD3eCc71wcA+VcAHA5vDd8+3UGakxiJV7i9pdQevU5T1R35pJ3MV5QW1pf+0kWBheJ2SWua8EQXZXsu4fVVYEz1sEKvof5EuxjoPvzpcRvrdp9C2gGMx6cpOHBmbImMesds7BZubwMVDTfXDnQ3vQfK7AC8wLfExMX5whyQc3q2OEnjGm5vE76SQxsfBLr77a7CNf+n0r/l6sSMtsBSnurckiIILCobAtVZhpF4gZF4jubaymj4Ch/fd380LE7bAnjc0NPxk2yqpmEuwGxF0ag+0k5uTpzZeBeaazvj0We8fXojainsb2xh2BZgbe0gSIllzSIUh63wfQ6dZ/O2fbjcKlOj58jJ3cVENESw5yErc9nf2MLQ4jwQAkV1Lqiq37/cZ9WaahJjF9AcmxiPDhLs7ePe23oOnmUwg2hSShQle96tKDjA2HAniusgo9FxnvY9Jxw7RWzGYy92QghM00x5g53qp9sHmtB58/o2umOI2NwGolMnMYUHIb7aAyiKwsjICLqu2/qBEIKUUAohMaSHSLyBSMoPTINQ6CX5+fn2AEVFRZSUlBCPx4nFYhl3L4RESjF/GEgX3pSj+Xw+/H7/b3U/AEOZFnp7O5+5AAAAAElFTkSuQmCC)}
+		ul {list-style-image: none}
+		/* ul rule needed to reset style for sub-bullets */
+
+	</style>
+</head>
+
+<body>
+	<div class="wrapper">
+		<div id="navigation"> <ul>
+<li><a href="../../Home.html" title="Home" class="page">Home</a>
+<ul>
+<li><a href="../Earth_Structure_and_History.html" title="Earth Structure and History" class="page">Earth Structure and History</a></li>
+<li><a href="../Economic_Geology.html" title="Economic Geology" class="page">Economic Geology</a></li>
+<li><a href="../Field_Techniques.html" title="Field Techniques" class="page">Field Techniques</a></li>
+<li><a href="../Fundamentals_of_Physical_Geography.html" title="Fundamentals of Physical Geography" class="page">Fundamentals of Physical Geography</a></li>
+<li><a href="../Geochemistry.html" title="Geochemistry" class="page">Geochemistry</a></li>
+<li><a href="../Geochronology.html" title="Geochronology" class="page">Geochronology</a></li>
+<li><a href="../Geoinformatics.html" title="Geoinformatics" class="page">Geoinformatics</a></li>
+<li><a href="../Geology_and_Society.html" title="Geology and Society" class="page">Geology and Society</a></li>
+<li><a href="../German.html" title="German" class="page">German</a></li>
+<li><a href="../Global_Environmental_Change.html" title="Global Environmental Change" class="page">Global Environmental Change</a></li>
+<li><a href="../Map_Projections.html" title="Map Projections" class="page">Map Projections</a></li>
+<li><a href="../Microbiology_and_Toxicology.html" title="Microbiology and Toxicology" class="page">Microbiology and Toxicology</a></li>
+<li><a href="../Natural_Hazards.html" title="Natural Hazards" class="page">Natural Hazards</a></li>
+<li><a href="../Organic_Chemistry.html" title="Organic Chemistry" class="page">Organic Chemistry</a></li>
+<li><a href="../Palaeoclimatology_and_Quaternary_Studies.html" title="Palaeoclimatology and Quaternary Studies" class="page">Palaeoclimatology and Quaternary Studies</a></li>
+<li><a href="../Palaeontology.html" title="Palaeontology" class="page">Palaeontology</a></li>
+<li><a href="../Palaeosols.html" title="Palaeosols" class="page">Palaeosols</a></li>
+<li><a href="../People_and_the_Environment.html" title="People and the Environment" class="page">People and the Environment</a></li>
+<li><a href="../Petrology.html" title="Petrology" class="page">Petrology</a></li>
+<li><a href="../Practice_of_Physical_Geography.html" title="Practice of Physical Geography" class="page">Practice of Physical Geography</a></li>
+<li><a href="../Reference.html" title="Reference" class="page">Reference</a>
+<ul>
+<li><a href="./Albedo_Values.html" title="Albedo Values" class="page">Albedo Values</a></li>
+<li><a href="./Dictionary.html" title="Dictionary" class="page">Dictionary</a></li>
+<li><b>Equations</b></li>
+<li><a href="./Fault_Rock_Classification.html" title="Fault Rock Classification" class="page">Fault Rock Classification</a></li>
+<li><a href="./Geological_Timescale.html" title="Geological Timescale" class="page">Geological Timescale</a></li>
+<li><a href="./Glossary.html" title="Glossary" class="page">Glossary</a></li>
+<li><a href="./Map_of_the_world.html" title="Map of the world" class="page">Map of the world</a></li>
+<li><a href="./Periodic_Table.html" title="Periodic Table" class="page">Periodic Table</a></li>
+<li><a href="./Planetary_Properties.html" title="Planetary Properties" class="page">Planetary Properties</a></li>
+<li><a href="./Referencing.html" title="Referencing" class="page">Referencing</a></li>
+<li><a href="./Scales.html" title="Scales" class="page">Scales</a></li>
+<li><a href="./Special_Characters.html" title="Special Characters" class="page">Special Characters</a></li>
+<li><a href="./Tectonic_Plates_Map.html" title="Tectonic Plates Map" class="page">Tectonic Plates Map</a></li>
+</ul>
+</li>
+<li><a href="../Subsurface_Solute_Transport.html" title="Subsurface Solute Transport" class="page">Subsurface Solute Transport</a></li>
+<li><a href="../Unfiled_Notes.html" title="Unfiled Notes" class="page">Unfiled Notes</a></li>
+<li><a href="../Water_and_Atmosphere.html" title="Water and Atmosphere" class="page">Water and Atmosphere</a></li>
+</ul></li>
+</ul>
+ </div>
+		<div id="content">
+			<h1>Equations <a name='Home:Reference:Equations'></a></h1>
+
+			<p>
+Created Saturday 30 November 2019<br>
+<span class="zim-tag">@maths</span> <span class="zim-tag">@REFERENCE</span>
+</p>
+
+<p>
+🔗️<a href="https://en.wikipedia.org/wiki/Dot_product" title="https://en.wikipedia.org/wiki/Dot_product" class="https">https://en.wikipedia.org/wiki/Dot_product</a>
+</p>
+
+<p>
+<img src="./Equations/pasted_image004.png" width="300"><br>
+<b>Atmospheric Pressure:</b>			 <img src="./Equations/equation019.png">	<img src="./Equations/equation020.png">=gravity 		ρ =density	z=altitude	P=pressure 	R=Gas constant 	T=Temperature 	m=molar mass<br>
+<b>Atmospheric Temperature:		</b><img src="./Equations/equation021.png">					T=Temperature 	z=altitude<br>
+<b>Bouguer Correction:</b>			<img src="./Equations/equation001.png">			G= Graviational Constant	ϱC=Crustal density 	t=Plateau thickness above sea level<br>
+<b>Density:</b>						<img src="./Equations/equation.png"><br>
+<b>Earthquake size/ location: 		</b><img src="./Equations/equation005.png">				V= Velocity	P= P wave 	S= S Wave<br>
+<b>Earthquake travel time:</b> 			<img src="./Equations/equation023.png"> 				t=travel time 		d=distance from quake to detector 		v=wave speed<br>
+<b>Glacial base shear stress:		</b><img src="./Equations/equation014.png"><br>
+<b>Glacial Friction:</b> 				<img src="./Equations/equation004.png">			ϱgh=weight	pw=water pressure<br>
+<b>Glacial, Glen's Flow Law</b>			<img src="./Equations/equation015.png">				τ= Shear Stress<br>
+<b>Glacial R Channel</b>: 				<img src="./Equations/equation011.png"> Q=Discharge 	A/n= Glens' Flow Law 	<img src="./Equations/equation012.png">= <a href="./Glossary.html" title="Steady State Pressure" class="page">Steady State Pressure</a> 	<img src="./Equations/equation013.png">=Initial pressure 	x= distance upstream<br>
+<b>Glacial Sheer Stress:</b> 			<img src="./Equations/equation003.png"> 		ϱ= fluid density	g= gravity (9.8)	h=ice thickness	α = slope gradient<br>
+<b>Graviational Attraction:</b>			<img src="./Equations/equation024.png">		G=Gravitational Constant 	m=Mass	r=Distance between objects<br>
+<b>Heat Capacity</b>: 				<img src="./Equations/equation018.png">				ΔQ = Heat that needs to be added to raise temperature by ΔT<br>
+<b>Law of Refraction:</b>				<img src="./Equations/equation022.png">	n=refractive index	<br>
+<b>Shear Stress in mass movement:	</b><img src="./Equations/equation016.png"><img src="./Equations/equation017.png">Pw= Water pressure<br>
+<b>Snell's Law:</b>					<img src="./Equations/equation023.png"><br>
+<b>Force:</b>						<img src="./Equations/equation025.png">				m=Mass 	a=Acceleration<br>
+<b>Inclination of magnetic field:</b>		<img src="./Equations/equation026.png">			I=Inclination 	λ = latitude<br>
+Moment of Inertia:				<img src="./Equations/equation028.png">				d=differentiation	<img src="./Equations/equation029.png">=Inertia	M=Mass	R=Radius<br>
+<b>Simson's index of Biodiversity:	</b><img src="./Equations/equation031.png">	N=∑ no. of organisms of all species	N=∑ no. of organisms of all species<br>
+<b>Geothermal Gradient:</b>			<img src="./Equations/equation032.png">				q=Thermal conductivity	K=Thermal conductivity	<img src="./Equations/equation033.png">=Geothermal gradient<br>
+<b>Stress:</b>						<img src="./Equations/equation034.png">					f=Force	a=Area<br>
+<span class="zim-tag">@USLE</span> 						<img src="./Equations/equation035.png">
+</p>
+
+<p>
+<b>Hillslope mass movement driving stress:</b>	<img src="./Equations/equation036.png">			T= stress 		w=weight 		A=contact area 	α = gradient<br>
+<b>Hillslope mass movement resistance</b>	<img src="./Equations/equation038.png">S=resistance  	w=weight 	A=contact area 	wp=water pressure 	α=gradient<br>
+<b>Reynold's Number</b>				<img src="./Equations/equation039.png">				μ =Mean flow velocity	L=length/ width  		ρf= Fluid density 		μb= Flow viscosity<br>
+<b>Froude Number:</b> 				<img src="./Equations/equation040.png">				μ = flow velocity 	g=external force	L=Length/ width 	<br>
+<b>Polar Amplification Factor:</b>			<img src="./Equations/equation041.png">Change
+</p>
+
+<p>
+Stoke's Law of Settling:			=<img src="./Equations/equation042.png"> V= Terminal Velocity	ρ = density 	d= clast diameter 	μ = fluid viscosity 
+</p>
+
+<p>
+Abney Level:								<img src="./Equations/equation043.png">
+</p>
+
+<p>
+Viscosity:						<img src="./Equations/pasted_image005.png" width="200">
+</p>
+
+<p>
+Distribution Coefficient: <img src="./Equations/equation044.png">
+</p>
+
+<p>
+Lithostatic Pressure:  <img src="./Equations/equation045.png"> ρ =overlaying rock density	g=gravitational acceleration 	z=depth  
+</p>
+
+<h1>Statistical Tests<a id="statistical-tests" class="h_anchor"></a></h1>
+
+<p>
+<b>Chi Squared:</b>				<img src="./Equations/equation006.png"><br>
+<b>Degrees of Freedom:</b> 		<img src="./Equations/equation007.png"><br>
+<b>Spearman's Rank:			</b><img src="./Equations/equation008.png"> <br>
+<b>Regressional Analysis:</b>		<img src="./Equations/equation009.png">		y= Predicted value 	a=intercept 		b= slope of trend line 	x=independent variable<br>
+<b>Degrees of Freedom:</b>		<img src="./Equations/equation010.png">
+</p>
+
+<h1>Constants<a id="constants" class="h_anchor"></a></h1>
+
+<p>
+<b>Graviational Constant:</b> 		<img src="./Equations/equation002.png"><br>
+<b>Gas Constant:</b>				8.314<br>
+<b>e:</b>						2.71828
+</p>
+
+
+			<br>
+			<span class="backlinks">
+				<hr class='footnotes'>
+				<b>Backlinks:</b>
+				<a href='../Petrology/Metamorphic/Metamorphic_Reactions.html'>Home:Petrology:Metamorphic:Metamorphic Reactions</a>
+				<br /><br />
+			</span>
+
+			
+		</div>
+	</div>
+</body>
+</html>
+
